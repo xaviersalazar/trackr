@@ -1,14 +1,16 @@
-import Nav from "../nav/Nav";
+import Nav from "../components/nav/Nav";
+import Home from "../pages/Home";
+import Logs from "../pages/Logs";
 
 const routes = [
   {
     path: "/",
     element: <Nav />,
     children: [
-      { index: true, element: "" },
+      { index: true, element: <Home /> },
       {
         path: "logs",
-        element: "",
+        element: <Logs />,
       },
     ],
   },
