@@ -17,10 +17,12 @@ Workout logging application
 - **Database**: Postgres
 
 ## Stories
-- [ ] As a user I would to see my most recent log in the home page
-- [ ] As a user I would like to be able to click on my most recent log to view more information about that log like the workouts I did, etc
+- [x] As a user I would to see my most recent log in the home page
 - [ ] As a user I would see to see all my logs on the home page sorted by date (asc)
 - [ ] As a user I would like the table of all my logs to be paginated, by 10 per page
+- `logController`, `LogRepo`
+- Pagination class?
+- Sort by date jpa-"named query"
 - [ ] As a user I would like each row of the table of all my logs to be clickable so I can view more information about that log
 - [ ] As a user I would like to be able to add a new entry to my logs
 - [ ] As a user I would like to be able to remove an existing log entry
