@@ -4,7 +4,7 @@
 -- Database: postgres
 -- -------------------------------------------------------------
 
-INSERT INTO "Exercise" ("id", "logId", "workoutNameId", "numOfSets", "numOfReps") VALUES
+INSERT INTO "exercise" ("id", "log_id", "workout_name_id", "num_of_sets", "num_of_reps") VALUES
 (1, 1, 1, 5, 5),
 (2, 1, 2, 5, 10),
 (3, 2, 15, 5, 8),

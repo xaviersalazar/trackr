@@ -2,6 +2,7 @@ package com.app.trackr.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -19,7 +20,7 @@ import lombok.Setter;
 @RequiredArgsConstructor
 @Getter
 @Setter
-@Table(name = "Exercise")
+@Table
 public class Exercise {
 
   @Id
@@ -27,18 +28,14 @@ public class Exercise {
   private Long id;
 
   @NonNull
-  @Column(name = "numOfSets")
+  @Column
   private Integer numOfSets;
 
   @NonNull
-  @Column(name = "numOfReps")
+  @Column
   private Integer numOfReps;
 
-  @ManyToOne
-  @JoinColumn(name = "logId")
-  private Log log;
-
   @OneToOne
-  @JoinColumn(name = "workoutNameId")
+  @JoinColumn(referencedColumnName = "id")
   private WorkoutName workoutName;
 }

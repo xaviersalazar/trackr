@@ -4,7 +4,7 @@
 -- Database: postgres
 -- -------------------------------------------------------------
 
-INSERT INTO "Workout_Name" ("id", "name") VALUES
+INSERT INTO "workout_name" ("id", "name") VALUES
 (1, 'Bench Press'),
 (2, 'Squat'),
 (3, 'Deadlift'),
