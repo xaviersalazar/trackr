@@ -2,7 +2,6 @@
 Workout logging application
 
 ## Features
-- [ ] **Login Page**
 - [ ] **Home Page**
   - [ ] Shows most recent log in card view that is clickable to show more information
   - [ ] Shows table of all logs sorted by default by date
@@ -11,11 +10,10 @@ Workout logging application
   - [ ] Add a new log entry
     - [ ] Modal/Card view with information to add a log
   - [ ] Remove a log entry
-- [ ] Logout functionality 
 
 ## Tech Stack
 - **Backend**: Springboot (Java)
-- **Frontend**: React, Bootstrap
+- **Frontend**: React, Bootstrap, React Router
 - **Database**: Postgres
 
 ## Stories
