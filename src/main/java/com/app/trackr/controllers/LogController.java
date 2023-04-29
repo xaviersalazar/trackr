@@ -1,5 +1,6 @@
 package com.app.trackr.controllers;
 
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,11 @@ public class LogController {
   @Autowired
   private LogRepo logRepo;
 
+  @GetMapping
+  ResponseEntity<List<Log>> getLogs() {
+    return ResponseEntity.ok().body(logRepo.findAllByOrderByIdDesc());
+  }
+  
   @GetMapping("/latest")
   ResponseEntity<Log> getLatestLog() {
     Optional<Log> log = logRepo.findTopByOrderByIdDesc();

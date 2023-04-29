@@ -2,14 +2,14 @@
 Workout logging application
 
 ## Features
-- [ ] **Home Page**
-  - [ ] Shows most recent log in card view that is clickable to show more information
-  - [ ] Shows table of all logs sorted by default by date
-    - [ ] Clickable rows to show card/modal of more information
-- [ ] **Logger Page**
-  - [ ] Add a new log entry
-    - [ ] Modal/Card view with information to add a log
-  - [ ] Remove a log entry
+- **Home Page**
+  - Shows most recent log in card view that is clickable to show more information
+  - Shows table of all logs sorted by default by date
+    - Clickable rows to show card/modal of more information
+- **Logger Page**
+  - Add a new log entry
+    - Modal/Card view with information to add a log
+  - Remove a log entry
 
 ## Tech Stack
 - **Backend**: Springboot (Java)
@@ -18,7 +18,7 @@ Workout logging application
 
 ## Stories
 - [x] As a user I would to see my most recent log in the home page
-- [ ] As a user I would see to see all my logs on the home page sorted by date (asc)
+- [x] As a user I would see to see all my logs on the home page sorted by date (desc)
 - [ ] As a user I would like the table of all my logs to be paginated, by 10 per page
 - `logController`, `LogRepo`
 - Pagination class?
